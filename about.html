@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K8s Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg"></div>
+
+    <header>
+        <div class="header-inner">
+            <a href="https://kubernetes.io" target="_blank" class="logo">
+                <img src="https://kubernetes.io/images/favicon.png" alt="Kubernetes" class="k8s-icon">
+                <span>kubernetes<span class="light">/calculator</span></span>
+            </a>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="calculator.html">Калькулятор</a>
+                <a href="about.html" class="active">О проекте</a>
+            </nav>
+            <a href="https://kubernetes.io" target="_blank" class="ext">kubernetes.io →</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="card about">
+            <div class="avatar">
+                <i class="fas fa-user-astronaut"></i>
+            </div>
+            <h2>Чуйко Павел Алексеевич</h2>
+            <p class="group">ИУ5-43Б</p>
+
+            <div class="section" >
+                <h3 style="color: red;"><i class="fas fa-rocket"></i> О проекте</h3>
+                <p style="color: red;">Современный веб-калькулятор, вдохновлённый Kubernetes. Поддерживает базовые и дополнительные операции.</p>
+                <div class="tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <a href="https://github.com/RenguPaul/PSP_4Term/tree/lab_1" target="_blank" class="github">
+                <i class="fab fa-github"></i> GitHub Repository
+            </a>
+
+            <div class="section">
+                <h3><i class="fas fa-star"></i> Особенности</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> +, -, ×, ÷</li>
+                    <li><i class="fas fa-check"></i> Факториал, корень, степень</li>
+                    <li><i class="fas fa-check"></i> Смена знака</li>
+                    <li><i class="fas fa-check"></i> Умное округление</li>
+                    <li><i class="fas fa-check"></i> Адаптивный дизайн</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="menu.js"></script>
+</body>
+</html>

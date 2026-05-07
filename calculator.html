@@ -3,58 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Калькулятор</title>
-    <!-- Подключаем CSS -->
-    <link rel="stylesheet" href="calculator.css">
-    <!-- Подключаем JavaScript -->
-    <script src="lab_1.js" defer></script>
+    <title>K8s Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="calculator">
-        <!-- Блок с экраном калькулятора -->
-        <div id="result" class="result">0</div>
+    <div class="bg"></div>
 
-        <!-- Блок с кнопками калькулятора -->
-        <div>
-            <!-- Первый ряд -->
-            <div>
-                <button id="btn_op_clear" class="my-btn secondary">C</button>
-                <button id="btn_op_sign" class="my-btn secondary">+/-</button>
-                <button id="btn_op_percent" class="my-btn secondary">%</button>
-                <button id="btn_op_div" class="my-btn primary">/</button>
-            </div>
+    <header>
+        <div class="header-inner">
+            <a href="https://kubernetes.io" target="_blank" class="logo">
+                <img src="https://kubernetes.io/images/favicon.png" alt="Kubernetes" class="k8s-icon">
+                <span>kubernetes<span class="light">/calculator</span></span>
+            </a>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="calculator.html" class="active">Калькулятор</a>
+                <a href="about.html">О проекте</a>
+            </nav>
+            <a href="https://kubernetes.io" target="_blank" class="ext">kubernetes.io →</a>
+        </div>
+    </header>
 
-            <!-- Второй ряд -->
-            <div>
-                <button id="btn_digit_7" class="my-btn">7</button>
-                <button id="btn_digit_8" class="my-btn">8</button>
-                <button id="btn_digit_9" class="my-btn">9</button>
-                <button id="btn_op_mult" class="my-btn primary">x</button>
-            </div>
-
-            <!-- Третий ряд -->
-            <div>
-                <button id="btn_digit_4" class="my-btn">4</button>
-                <button id="btn_digit_5" class="my-btn">5</button>
-                <button id="btn_digit_6" class="my-btn">6</button>
-                <button id="btn_op_minus" class="my-btn primary">-</button>
-            </div>
-
-            <!-- Четвертый ряд -->
-            <div>
-                <button id="btn_digit_1" class="my-btn">1</button>
-                <button id="btn_digit_2" class="my-btn">2</button>
-                <button id="btn_digit_3" class="my-btn">3</button>
-                <button id="btn_op_plus" class="my-btn primary">+</button>
-            </div>
-
-            <!-- Пятый ряд -->
-            <div>
-                <button id="btn_digit_0" class="my-btn">0</button>
-                <button id="btn_digit_dot" class="my-btn">.</button>
-                <button id="btn_op_equal" class="my-btn primary execute">=</button>
+    <main>
+        <div class="calculator">
+            <div id="display" class="display">0</div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="sec" data-clear>C</button>
+                    <button class="sec" data-backspace>⌫</button>
+                    <button class="sec" data-percent>%</button>
+                    <button class="sec" data-sign>±</button>
+                </div>
+                <div class="row">
+                    <button class="sec" data-reciprocal>1/x</button>
+                    <button class="sec" data-factorial>n!</button>
+                    <button class="sec" data-sqrt>√</button>
+                    <button class="prim" data-op="/">/</button>
+                </div>
+                <div class="row">
+                    <button data-digit="7">7</button>
+                    <button data-digit="8">8</button>
+                    <button data-digit="9">9</button>
+                    <button class="prim" data-op="*">×</button>
+                </div>
+                <div class="row">
+                    <button data-digit="4">4</button>
+                    <button data-digit="5">5</button>
+                    <button data-digit="6">6</button>
+                    <button class="prim" data-op="-">-</button>
+                </div>
+                <div class="row">
+                    <button data-digit="1">1</button>
+                    <button data-digit="2">2</button>
+                    <button data-digit="3">3</button>
+                    <button class="prim" data-op="+">+</button>
+                </div>
+                <div class="row">
+                    <button data-digit="0" class="zero">0</button>
+                    <button data-digit=".">.</button>
+                    <button class="prim" data-equal>=</button>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <script src="calculator.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
