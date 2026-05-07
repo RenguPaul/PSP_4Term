@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -281,3 +282,288 @@ button:active { transform: scale(0.96); }
 .p {
     color: "red";
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Inter', sans-serif;
+    color: #fff;
+    padding-top: 70px;
+    min-height: 100vh;
+}
+
+/* фон */
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    animation: bgShift 8s infinite alternate;
+    background-size: 200% 200%;
+}
+
+@keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* шапка */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid #e2e8f0;
+    z-index: 100;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #326ce5;
+    font-weight: 600;
+}
+
+.k8s-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+.logo span { font-size: 16px; }
+.light { font-weight: 400; color: #666; }
+
+nav { display: flex; gap: 28px; }
+nav a {
+    text-decoration: none;
+    color: #4a5568;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+nav a:hover, nav a.active { color: #fc093d; }
+
+.ext {
+    text-decoration: none;
+    color: #326ce5;
+    font-size: 14px;
+    background: #eef2ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background 0.2s;
+}
+.ext:hover { background: #e0e7ff; }
+
+/* основной контент */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px);
+    padding: 40px 20px;
+}
+
+/* карточки */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 32px;
+    padding: 48px 40px;
+    text-align: center;
+    max-width: 800px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.icons { font-size: 64px; margin-bottom: 20px; }
+.spin { animation: spin 4s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.card h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #fff, #326ce5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 12px;
+}
+
+.card p { opacity: 0.8; margin-bottom: 32px; }
+
+.features {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.features div {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.features i { color: #326ce5; }
+
+.btn-main {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #326ce5;
+    padding: 12px 32px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: transform 0.2s, gap 0.2s;
+}
+.btn-main:hover { transform: translateY(-2px); gap: 14px; }
+
+/* калькулятор */
+.calculator {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    border-radius: 28px;
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.4s ease;
+}
+
+.display {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 24px 20px;
+    border-radius: 20px;
+    text-align: right;
+    font-size: 2rem;
+    font-family: monospace;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.buttons { display: flex; flex-direction: column; gap: 10px; }
+.row { display: flex; gap: 10px; }
+
+button {
+    flex: 1;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: transform 0.1s, background 0.2s;
+}
+button:hover { background: rgba(255, 255, 255, 0.2); }
+button:active { transform: scale(0.96); }
+
+.prim { background: #326ce5; }
+.prim:hover { background: #3a7ae5; }
+.sec { background: rgba(255, 255, 255, 0.12); font-size: 0.9rem; }
+.zero { flex: 2; }
+
+/* страница о проекте */
+.about {
+    max-width: 600px;
+    padding: 40px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #326ce5, #1e4a7a);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+.avatar i { font-size: 44px; }
+
+.about h2 { font-size: 1.8rem; margin-bottom: 5px; }
+.group { opacity: 0.7; margin-bottom: 30px; }
+
+.section { text-align: left; margin: 28px 0; }
+.section h3 { color: #326ce5; margin-bottom: 12px; font-size: 1.2rem; }
+.section p { line-height: 1.5; margin-bottom: 12px; }
+
+.tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.tags span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.github {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+    transition: transform 0.2s, background 0.2s;
+}
+.github:hover { background: rgba(50, 108, 229, 0.4); transform: translateX(4px); }
+
+.about ul { list-style: none; }
+.about li { margin: 10px 0; display: flex; align-items: center; gap: 10px; }
+.about li i { color: #4ade80; font-size: 12px; }
+
+/* адаптив */
+@media (max-width: 700px) {
+    body { padding-top: 60px; }
+    .header-inner { height: 60px; }
+    nav { gap: 20px; }
+    nav a { font-size: 13px; }
+    .ext { display: none; }
+    .card h1 { font-size: 1.8rem; }
+    .card { padding: 32px 24px; }
+    .features div { font-size: 12px; padding: 8px 16px; }
+    button { padding: 12px; font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+    .logo span { font-size: 13px; }
+    .k8s-icon { width: 22px; height: 22px; }
+    nav { gap: 12px; }
+    nav a { font-size: 11px; }
+    .display { font-size: 1.6rem; padding: 16px; }
+}
+
+.p {
+    color: "red";
+}
+>>>>>>> 8cde14a13e30d51f4186dbd8ea73b1fecdfd8041
