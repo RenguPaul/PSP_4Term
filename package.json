@@ -1,0 +1,12 @@
+{
+  "name": "3d-gallery-lab3",
+  "version": "1.0.0",
+  "description": "3D Gallery in lab3 style",
+  "main": "main.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
