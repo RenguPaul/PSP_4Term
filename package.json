@@ -1,0 +1,24 @@
+{
+  "name": "kubernetes-stocks",
+  "version": "1.0.0",
+  "description": "CRUD приложение для карточек акций в стиле Kubernetes",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "express",
+    "kubernetes",
+    "crud",
+    "rest-api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

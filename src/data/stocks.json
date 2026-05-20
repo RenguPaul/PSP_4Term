@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
+    "title": "Акция: бесплатный кластер",
+    "text": "Получите 3 месяца бесплатного Managed Kubernetes"
+  },
+  {
+    "id": 2,
+    "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
+    "title": "Акция: поддержка 24/7",
+    "text": "Скидка 50% на поддержку Kubernetes в первый месяц"
+  },
+  {
+    "id": 3,
+    "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
+    "title": "Акция: мониторинг",
+    "text": "Prometheus + Grafana в подарок при заказе от 5 нод"
+  },
+  {
+    "id": 4,
+    "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
+    "title": "ABOBA",
+    "text": "ABOBA"
+  },
+  {
+    "id": 5,
+    "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
+    "title": "Новая акция от Kubernetes",
+    "text": "Скидка 30% на managed кластеры"
+  }
+]

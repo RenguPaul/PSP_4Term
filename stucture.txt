@@ -1,0 +1,18 @@
+lab4-kubernetes-stocks/
+├── src/
+│   ├── data/
+│   │   └── stocks.json
+│   ├── services/
+│   │   ├── fileService.js
+│   │   └── stocksService.js
+│   ├── controllers/
+│   │   └── stocksController.js
+│   ├── routes/
+│   │   └── stocks.js
+│   └── index.js
+├── public/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+├── package.json
+└── package-lock.json
