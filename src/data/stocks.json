@@ -2,8 +2,8 @@
   {
     "id": 1,
     "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
-    "title": "Акция: бесплатный кластер",
-    "text": "Получите 3 месяца бесплатного Managed Kubernetes"
+    "title": "Обновлённая карточка",
+    "text": "Текст обновлённой карточки"
   },
   {
     "id": 2,
@@ -42,9 +42,9 @@
     "text": "TEST"
   },
   {
-    "id": 8,
+    "id": 9,
     "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
-    "title": "A",
-    "text": "A"
+    "title": "Акция",
+    "text": "немного текста"
   }
 ]
