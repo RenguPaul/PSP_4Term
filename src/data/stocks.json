@@ -20,19 +20,31 @@
   {
     "id": 4,
     "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
-    "title": "ABOBA",
-    "text": "ABOBA"
+    "title": "AAA",
+    "text": "A"
   },
   {
     "id": 5,
     "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
-    "title": "Новая акция от Kubernetes",
-    "text": "Скидка 30% на managed кластеры"
+    "title": "AAA",
+    "text": "A"
   },
   {
     "id": 6,
     "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
     "title": "AAA",
+    "text": "A"
+  },
+  {
+    "id": 7,
+    "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
+    "title": "CORS TEST",
+    "text": "TEST"
+  },
+  {
+    "id": 8,
+    "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
+    "title": "A",
     "text": "A"
   }
 ]

@@ -9,8 +9,9 @@ const init = (filePath) => {
 const findAll = (title) => {
     const stocks = fileService.readData(dataFilePath);
     if (title) {
+        const lowerTitle = title.toLowerCase();
         return stocks.filter(stock =>
-            stock.title.toLowerCase().includes(title.toLowerCase())
+            stock.title.toLowerCase().includes(lowerTitle)
         );
     }
     return stocks;
