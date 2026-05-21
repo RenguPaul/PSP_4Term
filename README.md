@@ -168,7 +168,7 @@ async getData() {
 **Установка Vite:**
 
 ```bash
-cd teamviewer-app
+cd frontend-src
 npm install -D vite
 ```
 
@@ -208,29 +208,6 @@ export default {
 
 ---
 
-## 4. Часть 3. Раздача статики с бэкенда
-
-**Файл teamviewer-api/src/index.js (добавленный код):**
-
-```javascript
-const express = require('express');
-const path = require('path');
-// ... остальные импорты
-
-const app = express();
-// ... инициализация сервисов
-
-// Раздача статики из папки public (собранный фронтенд)
-app.use(express.static(path.join(__dirname, '..', 'public')));
-
-// API маршруты (начинаются с /api)
-app.use('/api/stocks', stocksRouter);
-
-// SPA fallback: все остальные GET-запросы отдаём index.html
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
-});
-```
 
 **Процесс сборки и раздачи:**
 
