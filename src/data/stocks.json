@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "src": "https://kubernetes.io/_common-resources/images/flower.svg",
+    "title": "Акция: бесплатный кластер",
+    "text": "Получите 3 месяца бесплатного Managed Kubernetes"
+  },
+  {
+    "id": 2,
+    "src": "https://kubernetes.io/_common-resources/images/scalable.svg",
+    "title": "Акция: поддержка 24/7",
+    "text": "Скидка 50% на поддержку Kubernetes в первый месяц"
+  },
+  {
+    "id": 3,
+    "src": "https://kubernetes.io/_common-resources/images/blocks.svg",
+    "title": "ФФФФФФФФФФФФФФФФФФФФ",
+    "text": "Prometheus + Grafana в подарок при заказе от 5 нод"
+  }
+]
